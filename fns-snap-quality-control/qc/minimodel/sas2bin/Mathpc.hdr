@@ -1,0 +1,211 @@
+  MATHPC.BIN  FILE NAME
+    02/12/25  CREATION DATE
+ 10:04:03.00  CREATION TIME
+      FY2023  BASE YEAR
+      FY2023  YEAR AGED TO
+         avg  SIMULATION MONTH
+       43776  HOUSEHOLD COUNT
+     QC MINI  MODEL LABEL
+     2023.00  MODEL VERSION
+CPI        0       CPI-U     YEAR
+WKS_MNTH_PYR       0.000
+WKS_MNTH_BYR       0.000
+SUBJECTS   3  Subject Label
+SUBJECT 1     QC DATA
+SUBJECT 2     SIMULATED SNAP VARIABLES
+SUBJECT 3     USER-GENERATED VARIABLES
+ROUTINES   3  Routine  Subj #
+ROUTINE 1     TALLY      3
+ROUTINE 2     MINIQC01   1
+ROUTINE 3     FSTAMP     2
+           4  Household 4-byte real    count
+           1  Household 8-byte integer count
+          58  Household 4-byte integer count
+          38  Household 1-byte integer count
+           0  Family    4-byte real    count
+           0  Family    8-byte integer count
+           0  Family    4-byte integer count
+           0  Family    1-byte integer count
+           0  Person    4-byte real    count
+           0  Person    8-byte integer count
+          36  Person    4-byte integer count
+          29  Person    1-byte integer count
+RECTYP        Household fixed
+CTFMHH        Household fixed
+CTPRHH        Household fixed
+FILLER        Household fixed
+ERNIDEDPCT    Household 4-byte real     #   1    MINIQC01
+FYWGT         Household 4-byte real     #   2    MINIQC01
+HWGT          Household 4-byte real     #   3    MINIQC01
+FSBENSUPP     Household 4-byte real     #   4    MINIQC01
+HHID          Household 8-byte integer  #   1    MINIQC01
+AMTADJ        Household 4-byte integer  #   1    MINIQC01
+AMTERR        Household 4-byte integer  #   2    MINIQC01
+ASSLIM        Household 4-byte integer  #   3    MINIQC01
+BENMAX        Household 4-byte integer  #   4    MINIQC01
+COUNTYCD      Household 4-byte integer  #   5    MINIQC01
+BENFIX        Household 4-byte integer  #   6    MINIQC01
+EXFSCSDED     Household 4-byte integer  #   7    MINIQC01
+FSCONT        Household 4-byte integer  #   8    MINIQC01
+FSCSDED       Household 4-byte integer  #   9    MINIQC01
+FSCSEXP       Household 4-byte integer  #  10    MINIQC01
+FSCSUPRT      Household 4-byte integer  #  11    MINIQC01
+FSDEEM        Household 4-byte integer  #  12    MINIQC01
+FSDEPDED      Household 4-byte integer  #  13    MINIQC01
+FSDEPDE2      Household 4-byte integer  #  14    MINIQC01
+FSDIVER       Household 4-byte integer  #  15    MINIQC01
+FSEDLOAN      Household 4-byte integer  #  16    MINIQC01
+FSENERGY      Household 4-byte integer  #  17    MINIQC01
+FSERNDE2      Household 4-byte integer  #  18    MINIQC01
+FSMEDDE2      Household 4-byte integer  #  19    MINIQC01
+FSMEDEXP      Household 4-byte integer  #  20    MINIQC01
+FSOTHERN      Household 4-byte integer  #  21    MINIQC01
+FSOTHGOV      Household 4-byte integer  #  22    MINIQC01
+FSOTHUN       Household 4-byte integer  #  23    MINIQC01
+FSSLFEMP      Household 4-byte integer  #  24    MINIQC01
+FSSLTDE2      Household 4-byte integer  #  25    MINIQC01
+FSSLTEXP      Household 4-byte integer  #  26    MINIQC01
+FSSOCSEC      Household 4-byte integer  #  27    MINIQC01
+FSSTDDE2      Household 4-byte integer  #  28    MINIQC01
+FSTOTDE2      Household 4-byte integer  #  29    MINIQC01
+FSUNEARN      Household 4-byte integer  #  30    MINIQC01
+FSUNEMP       Household 4-byte integer  #  31    MINIQC01
+FSVEHAST      Household 4-byte integer  #  32    MINIQC01
+FSVET         Household 4-byte integer  #  33    MINIQC01
+FSWAGES       Household 4-byte integer  #  34    MINIQC01
+FSWCOMP       Household 4-byte integer  #  35    MINIQC01
+FSWGESUP      Household 4-byte integer  #  36    MINIQC01
+GROSSCRN      Household 4-byte integer  #  37    MINIQC01
+HOMELSDED     Household 4-byte integer  #  38    MINIQC01
+LIQRESOR      Household 4-byte integer  #  39    MINIQC01
+LOCALCOD      Household 4-byte integer  #  40    MINIQC01
+MINIMUM_BEN   Household 4-byte integer  #  41    MINIQC01
+NETSCRN       Household 4-byte integer  #  42    MINIQC01
+OTHNLRES      Household 4-byte integer  #  43    MINIQC01
+RAWBEN        Household 4-byte integer  #  44    MINIQC01
+RAWERND       Household 4-byte integer  #  45    MINIQC01
+RAWGROSS      Household 4-byte integer  #  46    MINIQC01
+RAWLQRES      Household 4-byte integer  #  47    MINIQC01
+RAWNET        Household 4-byte integer  #  48    MINIQC01
+RCNTACTN      Household 4-byte integer  #  49    MINIQC01
+REALPROP      Household 4-byte integer  #  50    MINIQC01
+RENT          Household 4-byte integer  #  51    MINIQC01
+REVNUM        Household 4-byte integer  #  52    MINIQC01
+SHELCAP       Household 4-byte integer  #  53    MINIQC01
+SHELDED       Household 4-byte integer  #  54    MINIQC01
+TPOV          Household 4-byte integer  #  55    MINIQC01
+UTIL          Household 4-byte integer  #  56    MINIQC01
+YRMONTH       Household 4-byte integer  #  57    MINIQC01
+FSFOSTER      Household 4-byte integer  #  58    MINIQC01
+ACTNTYPE      Household 1-byte integer  #   1    MINIQC01
+AK_AREA       Household 1-byte integer  #   2    MINIQC01
+ALLADJ        Household 1-byte integer  #   3    MINIQC01
+AUTHREP       Household 1-byte integer  #   4    MINIQC01
+CASE          Household 1-byte integer  #   5    MINIQC01
+CAT_ELIG      Household 1-byte integer  #   6    MINIQC01
+CERTHHSZ      Household 1-byte integer  #   7    MINIQC01
+CERTMTH       Household 1-byte integer  #   8    MINIQC01
+EXPEDSER      Household 1-byte integer  #   9    MINIQC01
+FSNONCIT      Household 1-byte integer  #  10    MINIQC01
+HOMEDED       Household 1-byte integer  #  11    MINIQC01
+LASTCERT      Household 1-byte integer  #  12    MINIQC01
+MN_FIP        Household 1-byte integer  #  13    MINIQC01
+PURE_PA       Household 1-byte integer  #  14    MINIQC01
+RAWHSIZE      Household 1-byte integer  #  15    MINIQC01
+REGION        Household 1-byte integer  #  16    MINIQC01
+REGIONCD      Household 1-byte integer  #  17    MINIQC01
+REP_SYS       Household 1-byte integer  #  18    MINIQC01
+SSI_CAP       Household 1-byte integer  #  19    MINIQC01
+STATE         Household 1-byte integer  #  20    MINIQC01
+STATUS        Household 1-byte integer  #  21    MINIQC01
+STRATUM       Household 1-byte integer  #  22    MINIQC01
+SUA1          Household 1-byte integer  #  23    MINIQC01
+SUA2          Household 1-byte integer  #  24    MINIQC01
+TANF_IND      Household 1-byte integer  #  25    MINIQC01
+URBRUR        Household 1-byte integer  #  26    MINIQC01
+VEHICLEA      Household 1-byte integer  #  27    MINIQC01
+VEHICLEB      Household 1-byte integer  #  28    MINIQC01
+WRK_POOR      Household 1-byte integer  #  29    MINIQC01
+MED_DED_DEMO  Household 1-byte integer  #  30    MINIQC01
+FSNDISCA      Household 1-byte integer  #  31    MINIQC01
+COMPOSITION   Household 1-byte integer  #  32    MINIQC01
+NONCIT_HEAD   Household 1-byte integer  #  33    MINIQC01
+FSNDIS        Household 1-byte integer  #  34    MINIQC01
+FSDIS         Household 1-byte integer  #  35    MINIQC01
+FSELDER       Household 1-byte integer  #  36    MINIQC01
+FSKID         Household 1-byte integer  #  37    MINIQC01
+SUPP_BEN      Household 1-byte integer  #  38    MINIQC01
+FILLER        Household 1-byte filler
+FILLER        Household 1-byte filler
+RECTYP        Person    fixed
+FILLER        Person    fixed
+FILLER        Person    fixed
+FILLER        Person    fixed
+CONT          Person    4-byte integer  #   1    MINIQC01
+CSUPRT        Person    4-byte integer  #   2    MINIQC01
+DEEM          Person    4-byte integer  #   3    MINIQC01
+DIVER         Person    4-byte integer  #   4    MINIQC01
+DPCOST        Person    4-byte integer  #   5    MINIQC01
+EDLOAN        Person    4-byte integer  #   6    MINIQC01
+EITC          Person    4-byte integer  #   7    MINIQC01
+ENERGY        Person    4-byte integer  #   8    MINIQC01
+FOSTER        Person    4-byte integer  #   9    MINIQC01
+GA            Person    4-byte integer  #  10    MINIQC01
+OTHERN        Person    4-byte integer  #  11    MINIQC01
+OTHGOV        Person    4-byte integer  #  12    MINIQC01
+OTHUN         Person    4-byte integer  #  13    MINIQC01
+SEEDP         Person    4-byte integer  #  14    MINIQC01
+SLFEMP        Person    4-byte integer  #  15    MINIQC01
+SOCSEC        Person    4-byte integer  #  16    MINIQC01
+SSI           Person    4-byte integer  #  17    MINIQC01
+TANF          Person    4-byte integer  #  18    MINIQC01
+UNEMP         Person    4-byte integer  #  19    MINIQC01
+VET           Person    4-byte integer  #  20    MINIQC01
+WAGES         Person    4-byte integer  #  21    MINIQC01
+WCOMP         Person    4-byte integer  #  22    MINIQC01
+WGESUP        Person    4-byte integer  #  23    MINIQC01
+FSASSET    1  Person    4-byte integer  #  24    FSTAMP
+FSBEN      1  Person    4-byte integer  #  25    FSTAMP
+FSEARN     1  Person    4-byte integer  #  26    FSTAMP
+FSERNDED   1  Person    4-byte integer  #  27    FSTAMP
+FSGA       1  Person    4-byte integer  #  28    FSTAMP
+FSGRINC    1  Person    4-byte integer  #  29    FSTAMP
+FSMEDDED   1  Person    4-byte integer  #  30    FSTAMP
+FSNETINC   1  Person    4-byte integer  #  31    FSTAMP
+FSSLTDED   1  Person    4-byte integer  #  32    FSTAMP
+FSSTDDED   1  Person    4-byte integer  #  33    FSTAMP
+FSSSI      1  Person    4-byte integer  #  34    FSTAMP
+FSTANF     1  Person    4-byte integer  #  35    FSTAMP
+FSTOTDED   1  Person    4-byte integer  #  36    FSTAMP
+ABWDST        Person    1-byte integer  #   1    MINIQC01
+AGE           Person    1-byte integer  #   2    MINIQC01
+CTZN          Person    1-byte integer  #   3    MINIQC01
+EMPRG         Person    1-byte integer  #   4    MINIQC01
+EMPSTA        Person    1-byte integer  #   5    MINIQC01
+EMPSTB        Person    1-byte integer  #   6    MINIQC01
+FSAFIL        Person    1-byte integer  #   7    MINIQC01
+FSUN       1  Person    1-byte integer  #   8    FSTAMP
+RACETH        Person    1-byte integer  #   9    MINIQC01
+REL           Person    1-byte integer  #  10    MINIQC01
+SEX           Person    1-byte integer  #  11    MINIQC01
+WRKREG        Person    1-byte integer  #  12    MINIQC01
+YRSED         Person    1-byte integer  #  13    MINIQC01
+NDISCA        Person    1-byte integer  #  14    MINIQC01
+DIS           Person    1-byte integer  #  15    MINIQC01
+WORK          Person    1-byte integer  #  16    MINIQC01
+CASHOT     1  Person    1-byte integer  #  17    FSTAMP
+FSASTEST   1  Person    1-byte integer  #  18    FSTAMP
+FSGRTEST   1  Person    1-byte integer  #  19    FSTAMP
+FSMINBEN   1  Person    1-byte integer  #  20    FSTAMP
+FSNELDER   1  Person    1-byte integer  #  21    FSTAMP
+FSNETEST   1  Person    1-byte integer  #  22    FSTAMP
+FSNGMOM    1  Person    1-byte integer  #  23    FSTAMP
+FSNK0T4    1  Person    1-byte integer  #  24    FSTAMP
+FSNK5T17   1  Person    1-byte integer  #  25    FSTAMP
+FSNKID     1  Person    1-byte integer  #  26    FSTAMP
+FSPART     1  Person    1-byte integer  #  27    FSTAMP
+FSUSIZE    1  Person    1-byte integer  #  28    FSTAMP
+FTSTUD     1  Person    1-byte integer  #  29    FSTAMP
+FILLER        Person    1-byte filler
+FILLER        Person    1-byte filler
+FILLER        Person    1-byte filler

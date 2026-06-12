@@ -1,0 +1,25 @@
+# Default: normalize line endings to LF in repo, convert on checkout
+* text=auto
+
+# Source code — always LF
+*.f90 text eol=lf
+*.sas text eol=lf
+*.cs text eol=lf
+*.csproj text eol=lf
+*.sln text eol=lf
+*.resx text eol=lf
+*.prm text eol=lf
+*.hdr text eol=lf
+
+# Windows batch files — always CRLF
+*.bat text eol=crlf
+
+# Binary files — no line ending conversion
+*.pdf binary
+*.xlsb binary
+*.7z binary
+*.pfx binary
+*.suo binary
+*.resx binary
+*.png binary
+*.jpg binary

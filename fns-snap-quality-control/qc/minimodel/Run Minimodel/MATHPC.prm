@@ -1,0 +1,258 @@
+  INDIR     ../tally
+  TITLE     MATH QC Minimodel 2023.00
+  TITLE     Baselaw
+  TITLE
+  MODELTYP  QCMM
+  ABORT              2     Mild Error
+  DEBUGID            0     Households to print
+  DEBUGNBR          10     Num of debug HHs displayed for ea type
+  DEBUGSTD           T     Print the standard debug households
+  DELVARS            0     List of variables to delete on input
+  DOSTATE            1     1 or 2 signals a national model (all states), 3 requires APROCSTA, below
+  NPROC          99999     Number of cases to process
+  OUTDIR
+  POVGUIDE        U.S.    ALASKA    HAWAII     UNIT SIZE
+  POVGUIDE     13590.0   16990.0   15630.0     One person                    
+  POVGUIDE     18310.0   22890.0   21060.0     Two persons                   
+  POVGUIDE     23030.0   28790.0   26490.0     Three persons                 
+  POVGUIDE     27750.0   34690.0   31920.0     Four persons                  
+  POVGUIDE     32470.0   40590.0   37350.0     Five persons                  
+  POVGUIDE     37190.0   46490.0   42780.0     Six persons                   
+  POVGUIDE     41910.0   52390.0   48210.0     Seven persons                 
+  POVGUIDE     46630.0   58290.0   53640.0     Eight persons                 
+  POVGUIDE      4720.0    5900.0    5430.0     Amount for each person over 8 
+  POVMONTH        U.S.    ALASKA    HAWAII    UNIT SIZE
+  POVMONTH      1133.0    1416.0    1303.0      One person                   
+  POVMONTH      1526.0    1908.0    1755.0      Two persons                  
+  POVMONTH      1920.0    2400.0    2208.0      Three persons                
+  POVMONTH      2313.0    2891.0    2660.0      Four persons                 
+  POVMONTH      2706.0    3383.0    3113.0      Five persons                 
+  POVMONTH      3100.0    3875.0    3565.0      Six persons                  
+  POVMONTH      3493.0    4366.0    4018.0      Seven persons                
+  POVMONTH      3886.0    4858.0    4470.0      Eight persons                
+  POVMONTH       394.0     492.0     453.0      Amount for each person over 8
+  PRLEVEL            5     Debug designed for the analyst
+  RENAME             0     List of variables to rename on input
+  RENAME    Old Name     New Name
+  SHOWSTAT           T     U.S.
+  SHOWSTAT           F     Alabama
+  SHOWSTAT           F     Alaska
+  SHOWSTAT           F     Arizona
+  SHOWSTAT           F     Arkansas
+  SHOWSTAT           F     California
+  SHOWSTAT           F     Colorado
+  SHOWSTAT           F     Connecticut
+  SHOWSTAT           F     Delaware
+  SHOWSTAT           F     Dist. Col.
+  SHOWSTAT           F     Florida
+  SHOWSTAT           F     Georgia
+  SHOWSTAT           F     Guam
+  SHOWSTAT           F     Hawaii
+  SHOWSTAT           F     Idaho
+  SHOWSTAT           F     Illinois
+  SHOWSTAT           F     Indiana
+  SHOWSTAT           F     Iowa
+  SHOWSTAT           F     Kansas
+  SHOWSTAT           F     Kentucky
+  SHOWSTAT           F     Louisiana
+  SHOWSTAT           F     Maine
+  SHOWSTAT           F     Maryland
+  SHOWSTAT           F     Massachusetts
+  SHOWSTAT           F     Michigan
+  SHOWSTAT           F     Minnesota
+  SHOWSTAT           F     Mississippi
+  SHOWSTAT           F     Missouri
+  SHOWSTAT           F     Montana
+  SHOWSTAT           F     Nebraska
+  SHOWSTAT           F     Nevada
+  SHOWSTAT           F     New Hampshire
+  SHOWSTAT           F     New Jersey
+  SHOWSTAT           F     New Mexico
+  SHOWSTAT           F     New York
+  SHOWSTAT           F     North Carolina
+  SHOWSTAT           F     North Dakota
+  SHOWSTAT           F     Ohio
+  SHOWSTAT           F     Oklahoma
+  SHOWSTAT           F     Oregon
+  SHOWSTAT           F     Pennsylvania
+  SHOWSTAT           F     Rhode Island
+  SHOWSTAT           F     South Carolina
+  SHOWSTAT           F     South Dakota
+  SHOWSTAT           F     Tennessee
+  SHOWSTAT           F     Texas
+  SHOWSTAT           F     Utah
+  SHOWSTAT           F     Vermont
+  SHOWSTAT           F     Virgin Islands
+  SHOWSTAT           F     Virginia
+  SHOWSTAT           F     Washington
+  SHOWSTAT           F     West Virginia
+  SHOWSTAT           F     Wisconsin
+  SHOWSTAT           F     Wyoming
+  WRDELVAR           0     List of variables to delete on output
+  WRFILE             F     Write an output file
+  ALTSEQ             1
+  ALTSEQ    FSTAMP   1
+  MRVALUES  FSTAMP   1
+  DEFL_GEN    1.000000
+  DEFL_VEH    1.000000
+  AGEDSCRN           2
+  ASSETLIM      Elddis    Non-elddis
+  ASSETLIM       4250.     2750.     Alabama
+  ASSETLIM       4250.     2750.     Alaska
+  ASSETLIM       4250.     2750.     Arizona
+  ASSETLIM       4250.     2750.     Arkansas
+  ASSETLIM       4250.     2750.     California
+  ASSETLIM       4250.     2750.     Colorado
+  ASSETLIM       4250.     2750.     Connecticut
+  ASSETLIM       4250.     2750.     Delaware
+  ASSETLIM       4250.     2750.     Dist. Col.
+  ASSETLIM       4250.     2750.     Florida
+  ASSETLIM       4250.     2750.     Georgia
+  ASSETLIM       4250.     2750.     Guam
+  ASSETLIM       4250.     2750.     Hawaii
+  ASSETLIM       4250.     2750.     Idaho
+  ASSETLIM       4250.     2750.     Illinois
+  ASSETLIM       4250.     2750.     Indiana
+  ASSETLIM       4250.     2750.     Iowa
+  ASSETLIM       4250.     2750.     Kansas
+  ASSETLIM       4250.     2750.     Kentucky
+  ASSETLIM       4250.     2750.     Louisiana
+  ASSETLIM       4250.     2750.     Maine
+  ASSETLIM       4250.     2750.     Maryland
+  ASSETLIM       4250.     2750.     Massachusetts
+  ASSETLIM       4250.     2750.     Michigan
+  ASSETLIM       4250.     2750.     Minnesota
+  ASSETLIM       4250.     2750.     Mississippi
+  ASSETLIM       4250.     2750.     Missouri
+  ASSETLIM       4250.     2750.     Montana
+  ASSETLIM       4250.     2750.     Nebraska
+  ASSETLIM       4250.     2750.     Nevada
+  ASSETLIM       4250.     2750.     New Hampshire
+  ASSETLIM       4250.     2750.     New Jersey
+  ASSETLIM       4250.     2750.     New Mexico
+  ASSETLIM       4250.     2750.     New York
+  ASSETLIM       4250.     2750.     North Carolina
+  ASSETLIM       4250.     2750.     North Dakota
+  ASSETLIM       4250.     2750.     Ohio
+  ASSETLIM       4250.     2750.     Oklahoma
+  ASSETLIM       4250.     2750.     Oregon
+  ASSETLIM       4250.     2750.     Pennsylvania
+  ASSETLIM       4250.     2750.     Rhode Island
+  ASSETLIM       4250.     2750.     South Carolina
+  ASSETLIM       4250.     2750.     South Dakota
+  ASSETLIM       4250.     2750.     Tennessee
+  ASSETLIM       4250.     2750.     Texas
+  ASSETLIM       4250.     2750.     Utah
+  ASSETLIM       4250.     2750.     Vermont
+  ASSETLIM       4250.     2750.     VI
+  ASSETLIM       4250.     2750.     Virginia
+  ASSETLIM       4250.     2750.     Washington
+  ASSETLIM       4250.     2750.     West Virginia
+  ASSETLIM       4250.     2750.     Wisconsin
+  ASSETLIM       4250.     2750.     Wyoming
+  BASELAW            1
+  BENMAX          U.S.    AK URB   AK RUR1   AK RUR2    HAWAII      GUAM      V.I.     AREA
+  BENMAX          281.      351.      448.      545.      538.      415.      362.     One person
+  BENMAX          516.      644.      822.     1000.      987.      761.      664.     Two persons
+  BENMAX          740.      923.     1177.     1432.     1413.     1090.      951.     Three persons
+  BENMAX          939.     1172.     1494.     1819.     1794.     1385.     1208.     Four persons
+  BENMAX         1116.     1391.     1774.     2160.     2131.     1644.     1434.     Five persons
+  BENMAX         1339.     1670.     2129.     2592.     2557.     1973.     1721.     Six persons
+  BENMAX         1480.     1846.     2354.     2865.     2826.     2181.     1903.     Seven persons
+  BENMAX         1691.     2109.     2690.     3274.     3230.     2493.     2174.     Eight persons
+  BENMAX          211.      264.      336.      409.      404.      312.      272.     Amount for each person over 8
+  BENMIN          U.S.    AK URB   AK RUR1   AK RUR2    HAWAII      GUAM      V.I.     AREA
+  BENMIN           23.       28.       36.       44.       43.       33.       29.     One person
+  BENMIN           23.       28.       36.       44.       43.       33.       29.     Two persons
+  BENMIN            0.        0.        0.        0.        0.        0.        0.     Three persons
+  BENMIN            0.        0.        0.        0.        0.        0.        0.     Four persons
+  BENMIN            0.        0.        0.        0.        0.        0.        0.     Five persons
+  BENMIN            0.        0.        0.        0.        0.        0.        0.     Six persons
+  BENMIN            0.        0.        0.        0.        0.        0.        0.     Seven or more persons
+  BENMULT       1.0000
+  BRR           0.3000
+  DEDTYPE            2
+  DEPMAX          U.S.    ALASKA    HAWAII      GUAM      V.I.     AREA
+  DEPMAX        99999.    99999.    99999.    99999.    99999.
+  DEPMAX        99999.    99999.    99999.    99999.    99999.
+  DOSTATS            T
+  EARNDED       0.2000
+  EARNMAX        99999
+  FS_VARS            2
+  GLUNIT             2
+  GRSM_SEL           1
+  GRSMULT       1.0000
+  GRSSCRN           US    ALASKA    HAWAII     AREA
+  GRSSCRN        1473.     1841.     1694.     One person
+  GRSSCRN        1984.     2480.     2282.     Two persons
+  GRSSCRN        2495.     3119.     2870.     Three persons
+  GRSSCRN        3007.     3759.     3458.     Four persons
+  GRSSCRN        3518.     4398.     4047.     Five persons
+  GRSSCRN        4029.     5037.     4635.     Six persons
+  GRSSCRN        4541.     5676.     5223.     Seven persons
+  GRSSCRN        5052.     6315.     5811.     Eight persons
+  GRSSCRN         512.      640.      589.     Amount for each person over 8
+  MDTHRESH          0.
+  MN_BEN        FIPBEN      CASH     Household
+  MN_BEN          235.      380.     One person
+  MN_BEN          431.      583.     Two persons
+  MN_BEN          619.      686.     Three persons
+  MN_BEN          788.      782.     Four persons
+  MN_BEN          945.      865.     Five persons
+  MN_BEN         1148.      947.     Six persons
+  MN_BEN         1252.     1030.     Seven persons
+  MN_BEN         1426.     1102.     Eight persons
+  MN_BEN         1600.     1172.     Nine persons
+  MN_BEN         1777.     1232.     Ten persons
+  MN_BEN          178.       58.     Amount for each person over 10
+  MNERNDED      0.5000
+  NETMULT       1.0000
+  NETSCRN         U.S.    ALASKA    HAWAII     AREA
+  NETSCRN        1133.     1416.     1303.     One person
+  NETSCRN        1526.     1908.     1755.     Two persons
+  NETSCRN        1920.     2400.     2208.     Three persons
+  NETSCRN        2313.     2891.     2660.     Four persons
+  NETSCRN        2706.     3383.     3113.     Five persons
+  NETSCRN        3100.     3875.     3565.     Six persons
+  NETSCRN        3493.     4366.     4018.     Seven persons
+  NETSCRN        3886.     4858.     4470.     Eight persons
+  NETSCRN         394.      492.      453.     Amount for each person over 8
+  PLANNAME    Q23P001: Replicate baselaw
+  PLANNBR          001
+  PRLEVEL            5
+  PUREPA             3     Pure PA defined by AFDC, SSI, & GA
+  SHELCAP1        624.     U.S.
+  SHELCAP1        996.     Alaska
+  SHELCAP1        840.     Hawaii
+  SHELCAP1        732.     Guam
+  SHELCAP1        492.     VI
+  SHLCMULT      1.0000
+  SHLTRPCT      0.5000
+  STANDDED        U.S.    ALASKA    HAWAII      GUAM      V.I.
+  STANDDED        193.      330.      272.      387.      170.   One person
+  STANDDED        193.      330.      272.      387.      170.   Two persons
+  STANDDED        193.      330.      272.      387.      170.   Three persons
+  STANDDED        193.      330.      272.      387.      192.   Four persons
+  STANDDED        225.      330.      272.      450.      225.   Five persons
+  STANDDED        258.      330.      296.      515.      258.   Six persons
+  STANDDED        258.      330.      296.      515.      258.   Seven or more persons
+  STUDAGE           17
+  XMN_FIP            F   Exclude MFIP units from reform
+  XSCAP_AZ           F   Exclude SSI CAP units in AZ from reform
+  XSCAP_FL           F   Exclude SSI CAP units in FL from reform
+  XSCAP_KY           F   Exclude SSI CAP units in KY from reform
+  XSCAP_LA           F   Exclude SSI CAP units in LA from reform
+  XSCAP_MA           F   Exclude SSI CAP units in MA from reform
+  XSCAP_MD           F   Exclude SSI CAP units in MD from reform
+  XSCAP_MS           F   Exclude SSI CAP units in MS from reform
+  XSCAP_MI           F   Exclude SSI CAP units in MI from reform
+  XSCAP_NC           F   Exclude SSI CAP units in NC from reform
+  XSCAP_NJ           F   Exclude SSI CAP units in NJ from reform  
+  XSCAP_NY           F   Exclude SSI CAP units in NY from reform
+  XSCAP_PA           F   Exclude SSI CAP units in PA from reform
+  XSCAP_SC           F   Exclude SSI CAP units in SC from reform
+  XSCAP_SD           F   Exclude SSI CAP units in SD from reform
+  XSCAP_TX           F   Exclude SSI CAP units in TX from reform
+  XSCAP_VA           F   Exclude SSI CAP units in VA from reform
+  XSCAP_WA           F   Exclude SSI CAP units in WA from reform
+  ENDPARMS

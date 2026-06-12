@@ -1,0 +1,8 @@
+# Visual Studio artifacts
+*.pfx
+*.suo
+*.user
+
+# OS
+Thumbs.db
+.DS_Store
