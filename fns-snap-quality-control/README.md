@@ -14,7 +14,6 @@ Source code for the SNAP (Supplemental Nutrition Assistance Program) Quality Con
 - `qc/data_processing/` — SAS parameter file for data processing
 - `qc/fstamp/` — Fortran source for the QC FSTAMP component
 - `qc/minimodel/` — Fortran and SAS code for the QC minimodel runner and tally programs
-- `2025-FNS-08918-F (Final Response Letter).pdf` — Agency FOIA response letter
 - `List of FY 2023 QC Minimodel programs.pdf` — Index of programs included in the release
 
 ## License

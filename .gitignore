@@ -6,3 +6,11 @@
 # OS
 Thumbs.db
 .DS_Store
+
+# Microsoft Office temp files
+~$*
+
+# FOIA response letters (kept on disk, not published)
+*Final Response Letter*.pdf
+*FOIA Response*.pdf
+*Release 1_Letter*.pdf

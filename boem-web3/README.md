@@ -20,7 +20,6 @@ Source code for BOEM's Well Economic Boundary (WEB3) model, used to evaluate the
   - `WEB30.csproj`, `WEB30.sln` — Visual Studio project and solution files
   - `Properties/AssemblyInfo.cs` — Assembly metadata
 - `DOI-2026-004970_Part II - User Manual for WEB 2.PDF` — Official user manual
-- `2026_0428_DOI-20226-004970_Release 1_Letter.pdf` — Agency FOIA response letter
 
 ## License
 

@@ -10,7 +10,6 @@ Survey collection instruments, methodology documentation, and supporting materia
 
 ## Contents
 
-- `2026-F-06065 Yardis FOIA Response - KN signed.pdf` — Agency FOIA response letter
 - `2026-F-06065_Records_Zip.7z` — Archive of released records
 - `1220_0163_Supporting Statement Part A_2025_2027.docx` — OMB supporting statement (Part A)
 - `1220_0163_Supporting Statement Part B_2025-2027.docx` — OMB supporting statement (Part B)
