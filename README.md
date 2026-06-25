@@ -25,4 +25,4 @@ If you are aware of a non-public federal government model that should be made op
 
 ## License
 
-Most materials are works of the United States Government and are not subject to copyright protection in the United States under 17 U.S.C. § 105. The exception is the EPA SC-GHG model, which is released under the [MIT License](epa-scghg/LICENSE.md) (code) and [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) (data), per EPA's original terms.
+Most materials are works of the United States Government and are not subject to copyright protection in the United States under 17 U.S.C. § 105. The exception is the EPA SC-GHG model: EPA's own code and data are released under [EPA's open license](epa-scghg/LICENSE.md) and [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). The DSCIM component (`epa-scghg/DSCIM/`) is authored by the Climate Impact Lab and released under the [MIT License](epa-scghg/DSCIM/LICENSE).
