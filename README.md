@@ -9,6 +9,7 @@ This repository contains source code and artifacts from U.S. federal government 
 | [`bls-cpi-housing-survey`](bls-cpi-housing-survey/) | Bureau of Labor Statistics | CPI Housing Survey Collection Instruments |
 | [`boem-web3`](boem-web3/) | Bureau of Ocean Energy Management | Well Economic Boundary Model (WEB3) |
 | [`epa-scghg`](epa-scghg/) | U.S. Environmental Protection Agency | Social Cost of Greenhouse Gases (SC-GHG) |
+| [`ers-season-average-price`](ers-season-average-price/) | USDA Economic Research Service | Season-Average Price / Market Year Average Price Forecast Model |
 | [`fns-nslp-high-risk-indicators`](fns-nslp-high-risk-indicators/) | USDA Food and Nutrition Service | NSLP High-Risk Indicators of Certification Error Model |
 | [`fns-snap-quality-control`](fns-snap-quality-control/) | USDA Food and Nutrition Service | SNAP Quality Control Minimodels |
 
