@@ -12,6 +12,7 @@ This repository contains source code and artifacts from U.S. federal government 
 | [`ers-season-average-price`](ers-season-average-price/) | USDA Economic Research Service | Season-Average Price / Market Year Average Price Forecast Model |
 | [`fns-nslp-high-risk-indicators`](fns-nslp-high-risk-indicators/) | USDA Food and Nutrition Service | NSLP High-Risk Indicators of Certification Error Model |
 | [`fns-snap-quality-control`](fns-snap-quality-control/) | USDA Food and Nutrition Service | SNAP Quality Control Minimodels |
+| [`noaa-om4`](noaa-om4/) | NOAA Geophysical Fluid Dynamics Laboratory | OM4 Ocean Model Configuration |
 
 ## About
 
