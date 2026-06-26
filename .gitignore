@@ -10,6 +10,9 @@ Thumbs.db
 # Microsoft Office temp files
 ~$*
 
+# Claude guidance (internal only)
+CLAUDE.md
+
 # FOIA response letters (kept on disk, not published)
 *Final Response Letter*.pdf
 *FOIA Response*.pdf
