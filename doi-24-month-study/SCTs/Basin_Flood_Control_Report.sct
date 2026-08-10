@@ -1,0 +1,489 @@
+# SCT File Created 3/1/2012 2:18:58 PM
+#  as N:/COM460/RiverWare Models/Monthly Models/24Month Study/SCT/Flood_Control_Report.sct
+# Generated using RiverWare Version <RiverWare_Model 6.1.3 Patch>
+# Generated from Model File <24month.FEB12_ReverseRuleset.mdl>
+# CADSWES, University of Colorado at Boulder, http://cadswes.colorado.edu/
+#
+SCT 0 0 Version: 20.4
+SCT_PROPERTIES
+  SLOT_ITEM_CNT           40
+  PRESIM_TSTEP_CNT        1
+  POSTSIM_TSTEP_CNT       0
+  TSTEP_AXIS_HORZ         False
+  DETAIL_MODE             DETAIL_MODE_NOSUM
+  CONFIG_LOCKED           False
+
+  SHOW_RUN_STATUS         True
+
+  TSAGG_FIXED_METHOD      False
+  TSAGG_FIXED_CNT         12
+  TSAGG_INTERVAL          1 YEAR
+  TSAGG_START_HOUR        0
+  TSAGG_START_WDAY        0
+  TSAGG_START_MDAY        1
+  TSAGG_START_MONTH       0
+
+  WINDOW_WIDTH            1272
+  WINDOW_HEIGHT           763
+  RIGHT_MARGIN            0
+  DIAG_WINDOW_HEIGHT      0
+
+  SLOT_LABEL_COL_WIDTH    COLFIT_METHOD_UND 0
+  SLOT_UNITS_COL_WIDTH    COLFIT_METHOD_UND 0
+  AGG_TIME_DATA_COL_WIDTH COLFIT_METHOD_UND 0
+  NOA_TIME_DATA_COL_WIDTH COLFIT_METHOD_UND 0
+  SHOW_SELECTION_STATS    True
+  SEL_STAT_MEDIAN_MAXCNT  31
+
+  SCT_SFAS "START"
+  SCT_SFAS "Unit_on Flow Slot_off &nbsp; FUNC Ave"
+  SCT_SFAS "Unit_on Volume Slot_off &nbsp; FUNC Last"
+  SCT_SFAS "Unit_on Length Slot_off &nbsp; FUNC Last"
+  SCT_SFAS "Unit_off NONE Slot_off &nbsp; FUNC Last"
+  SCT_SFAS "END"
+
+  SCT_FONT_SPEC "Font A" "MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0"
+  SCT_FONT_SPEC "Font B" "MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"
+  SCT_FONT_SPEC "Initial" "MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"
+  CUR_SCT_FONT_LABEL      "Font A"
+
+  SHOW_MISSING_SLOTS      True
+  DISPLAY_NANS            True
+  SHOW_GRID               True
+  DBL_CLK_TOGGLES_DETAIL  False
+  XHATCH_PREPOST_TSTEPS   False
+  TARGET_OP_FULL_ORN      True
+  SHOW_ROW_NUMS           False
+  SHOW_SLOT_TYPES_COL     True
+  SHOW_UNITS_COL          True
+  SHOW_SUM_FUNC_COL       True
+  SHOW_WEEKDAY_COL        True
+  MARK_WEEKEND_ROWDIV     False
+  MARK_MONTH_ROWDIV       False
+  COLHEAD_SHOW_UNITS      True
+  COLHEAD_SHOW_SUM_FUNC   True
+  COLHEAD_SHOW_WEEKDAY    True
+  COLHEAD_HIDE_2400       False
+  MARK_WEEKEND_COLDIV     False
+  MARK_MONTH_COLDIV       False
+  MARK_READONLY_CELLS     True
+  SLOTROW_LABEL_INDENT    0
+  SUMMARY_FLAGS_SHOWN     SUMMARY_FLAGS_ON
+
+  MARK_4HOUR_ROWDIV       False
+  MARK_4HOUR_COLDIV       False
+  MARK_DAY_ROWDIV         False
+  MARK_DAY_COLDIV         False
+  MARK_YEAR_ROWDIV        False
+  MARK_YEAR_COLDIV        False
+  TEXT_IN_SLOT_ROWDIV     True
+
+  TOOLBAR_SWAP_AXIS       True
+  TOOLBAR_DETAIL          True
+  TOOLBAR_DETAIL_USER     True
+  TOOLBAR_DETAIL_HIDE     False
+  TOOLBAR_DETAIL_SHOW     False
+  TOOLBAR_DETAIL_NOSUM    True
+  TOOLBAR_PLOT_SLOTS      True
+  TOOLBAR_RUN_CTRL        True
+  TOOLBAR_START_RUN       True
+  TOOLBAR_FLAGS           True
+  TOOLBAR_FLAG_BUT_CODES  "TBMDR"
+
+  TOOLBAR_SAVE_MODEL      False
+  TOOLBAR_OPEN_SLOTS      False
+  TOOLBAR_DTIME_SPINNER   True
+
+  COLOR_TEXT_FG             0   0   0
+  COLOR_FLAG          'O' 255 255 255
+  COLOR_FLAG          'I' 224 224 224
+  COLOR_FLAG          'T'   0 255 255
+  COLOR_FLAG          'B' 144 255   0
+  COLOR_FLAG          'M'  85 192 240
+  COLOR_FLAG          'D' 255 236 136
+  COLOR_FLAG          'R' 192 255 192
+  COLOR_FLAG          'S' 255 192 208
+  COLOR_FLAG          'G' 136 208 240
+  COLOR_FLAG          'U' 200 200 255
+  COLOR_GRID              160 160 160
+  COLOR_SUMMARY_BG        224 255 224
+  COLOR_INACT_CELL_FG     128 128 128
+  COLOR_INACT_CELL_BG     192 192 192
+  COLOR_WEEKEND_DIV         0   0 255
+  COLOR_MONTH_DIV         204 204 102
+  COLOR_SIM_TSTEP_DIV     170   0   0
+  COLOR_PPSIM_XHATCH        0   0   0
+  COLOR_SLOT_DIV_BG       136 208 240
+  COLOR_COPY_XHATCH         0 255   0
+  COLOR_DISPDISA_XHATCH   255   0   0
+  COLOR_READONLY_XHATCH   224 240 255
+  COLOR_OVERDETERMINED    255   0   0
+
+  COLOR_4HOUR_DIV         170  85 255
+  COLOR_DAY_DIV             0 204   0
+  COLOR_YEAR_DIV          153 255  51
+  COLOR_STATUSBAR_FG        0   0   0
+  COLOR_STATUSBAR_BG      255 255 240
+  COLOR_POSTSIM_TSTEP_DIV 170   0   0
+
+  FULL_PRECISION_EDITING  True
+
+SLOT_REF  0
+  SLOT_LABEL        "FloodControlOutput.BMpred"
+  SLOT_MULTILINE    "FloodControlOutput<br>.BMpred"
+  RW_SLOT_NAME      "FloodControlOutput.BMpred"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  1
+  SLOT_LABEL        "FloodControlOutput.BMuse"
+  SLOT_MULTILINE    "FloodControlOutput<br>.BMuse"
+  RW_SLOT_NAME      "FloodControlOutput.BMuse"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  2
+  SLOT_LABEL        "FloodControlOutput.BMCreditable"
+  SLOT_MULTILINE    "FloodControlOutput<br>.BMCreditable"
+  RW_SLOT_NAME      "FloodControlOutput.BMCreditable"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  3
+  SLOT_LABEL        "FloodControlOutput.BMEffective"
+  SLOT_MULTILINE    "FloodControlOutput<br>.BMEffective"
+  RW_SLOT_NAME      "FloodControlOutput.BMEffective"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_DIV  4
+  SLOT_LABEL        ""
+
+SLOT_REF  5
+  SLOT_LABEL        "FloodControlOutput.FGpred"
+  SLOT_MULTILINE    "FloodControlOutput<br>.FGpred"
+  RW_SLOT_NAME      "FloodControlOutput.FGpred"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  6
+  SLOT_LABEL        "FloodControlOutput.FGuse"
+  SLOT_MULTILINE    "FloodControlOutput<br>.FGuse"
+  RW_SLOT_NAME      "FloodControlOutput.FGuse"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  7
+  SLOT_LABEL        "FloodControlOutput.FGCreditable"
+  SLOT_MULTILINE    "FloodControlOutput<br>.FGCreditable"
+  RW_SLOT_NAME      "FloodControlOutput.FGCreditable"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  8
+  SLOT_LABEL        "FloodControlOutput.FGEffective"
+  SLOT_MULTILINE    "FloodControlOutput<br>.FGEffective"
+  RW_SLOT_NAME      "FloodControlOutput.FGEffective"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_DIV  9
+  SLOT_LABEL        ""
+
+SLOT_REF  10
+  SLOT_LABEL        "FloodControlOutput.NAVpred"
+  SLOT_MULTILINE    "FloodControlOutput<br>.NAVpred"
+  RW_SLOT_NAME      "FloodControlOutput.NAVpred"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  11
+  SLOT_LABEL        "FloodControlOutput.NAVuse"
+  SLOT_MULTILINE    "FloodControlOutput<br>.NAVuse"
+  RW_SLOT_NAME      "FloodControlOutput.NAVuse"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  12
+  SLOT_LABEL        "FloodControlOutput.NAVCreditable"
+  SLOT_MULTILINE    "FloodControlOutput<br>.NAVCreditable"
+  RW_SLOT_NAME      "FloodControlOutput.NAVCreditable"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  13
+  SLOT_LABEL        "FloodControlOutput.NAVEffective"
+  SLOT_MULTILINE    "FloodControlOutput<br>.NAVEffective"
+  RW_SLOT_NAME      "FloodControlOutput.NAVEffective"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_DIV  14
+  SLOT_LABEL        ""
+
+SLOT_REF  15
+  SLOT_LABEL        "FloodControlOutput.PowellPred"
+  SLOT_MULTILINE    "FloodControlOutput<br>.PowellPred"
+  RW_SLOT_NAME      "FloodControlOutput.PowellPred"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  16
+  SLOT_LABEL        "FloodControlOutput.PowellCredEff"
+  SLOT_MULTILINE    "FloodControlOutput<br>.PowellCredEff"
+  RW_SLOT_NAME      "FloodControlOutput.PowellCredEff"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  17
+  SLOT_LABEL        "FloodControlOutput.MeadPred"
+  SLOT_MULTILINE    "FloodControlOutput<br>.MeadPred"
+  RW_SLOT_NAME      "FloodControlOutput.MeadPred"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  18
+  SLOT_LABEL        "FloodControlOutput.MeadCredEff"
+  SLOT_MULTILINE    "FloodControlOutput<br>.MeadCredEff"
+  RW_SLOT_NAME      "FloodControlOutput.MeadCredEff"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_DIV  19
+  SLOT_LABEL        ""
+
+SLOT_REF  20
+  SLOT_LABEL        "FloodControlOutput.UBEffective"
+  SLOT_MULTILINE    "FloodControlOutput<br>.UBEffective"
+  RW_SLOT_NAME      "FloodControlOutput.UBEffective"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  21
+  SLOT_LABEL        "FloodControlOutput.UBpredSpc"
+  SLOT_MULTILINE    "FloodControlOutput<br>.UBpredSpc"
+  RW_SLOT_NAME      "FloodControlOutput.UBpredSpc"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  22
+  SLOT_LABEL        "FloodControlOutput.UBCreditable"
+  SLOT_MULTILINE    "FloodControlOutput<br>.UBCreditable"
+  RW_SLOT_NAME      "FloodControlOutput.UBCreditable"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  23
+  SLOT_LABEL        "FloodControlOutput.TotCreditableSpc"
+  SLOT_MULTILINE    "FloodControlOutput<br>.TotCreditableSpc"
+  RW_SLOT_NAME      "FloodControlOutput.TotCreditableSpc"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  24
+  SLOT_LABEL        "FloodControlOutput.TotEffectiveSpc"
+  SLOT_MULTILINE    "FloodControlOutput<br>.TotEffectiveSpc"
+  RW_SLOT_NAME      "FloodControlOutput.TotEffectiveSpc"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  25
+  SLOT_LABEL        "FloodControlOutput.TotPredSpc"
+  SLOT_MULTILINE    "FloodControlOutput<br>.TotPredSpc"
+  RW_SLOT_NAME      "FloodControlOutput.TotPredSpc"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  26
+  SLOT_LABEL        "FloodControlOutput.TotSystemContent"
+  SLOT_MULTILINE    "FloodControlOutput<br>.TotSystemContent"
+  RW_SLOT_NAME      "FloodControlOutput.TotSystemContent"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  27
+  SLOT_LABEL        "FloodControlOutput.FCrelease"
+  SLOT_MULTILINE    "FloodControlOutput<br>.FCrelease"
+  RW_SLOT_NAME      "FloodControlOutput.FCrelease"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  28
+  SLOT_LABEL        "Mead.Outflow"
+  SLOT_MULTILINE    "Mead<br>.Outflow"
+  RW_SLOT_NAME      "Mead.Outflow"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 88
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  29
+  SLOT_LABEL        "FloodControlOutput.Flood Control Flag"
+  SLOT_MULTILINE    "FloodControlOutput<br>.Flood Control Flag"
+  RW_SLOT_NAME      "FloodControlOutput.Flood Control Flag"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 119
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 5
+
+SLOT_REF  30
+  SLOT_LABEL        "FloodControlOutput.Exclusive Space Flag"
+  SLOT_MULTILINE    "FloodControlOutput<br>.Exclusive Space Flag"
+  RW_SLOT_NAME      "FloodControlOutput.Exclusive Space Flag"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 131
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 5
+
+SLOT_DIV  31
+  SLOT_LABEL        ""
+
+SLOT_REF  32
+  SLOT_LABEL        "Mead.Outflow"
+  SLOT_MULTILINE    "Mead<br>.Outflow"
+  RW_SLOT_NAME      "Mead.Outflow"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 102
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  33
+  SLOT_LABEL        "Lower Basin Output.MeadSchedRel"
+  SLOT_MULTILINE    "Lower Basin Output<br>.MeadSchedRel"
+  RW_SLOT_NAME      "Lower Basin Output.MeadSchedRel"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 120
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 5
+
+SLOT_REF  34
+  SLOT_LABEL        "Lower Basin Output.DownstreamReq"
+  SLOT_MULTILINE    "Lower Basin Output<br>.DownstreamReq"
+  RW_SLOT_NAME      "Lower Basin Output.DownstreamReq"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 120
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 5
+
+SLOT_REF  35
+  SLOT_LABEL        "Lower Basin Output.MexicoExcessFlow"
+  SLOT_MULTILINE    "Lower Basin Output<br>.MexicoExcessFlow"
+  RW_SLOT_NAME      "Lower Basin Output.MexicoExcessFlow"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 120
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 5
+
+SLOT_DIV  36
+  SLOT_LABEL        ""
+
+SLOT_REF  37
+  SLOT_LABEL        "FloodControlOutput.Forecas"
+  SLOT_MULTILINE    "FloodControlOutput<br>.Forecas"
+  RW_SLOT_NAME      "FloodControlOutput.Forecas"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  38
+  SLOT_LABEL        "FloodControlOutput.Withoutrel"
+  SLOT_MULTILINE    "FloodControlOutput<br>.Withoutrel"
+  RW_SLOT_NAME      "FloodControlOutput.Withoutrel"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 104
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+SLOT_REF  39
+  SLOT_LABEL        "FloodControlOutput.Consnev"
+  SLOT_MULTILINE    "FloodControlOutput<br>.Consnev"
+  RW_SLOT_NAME      "FloodControlOutput.Consnev"
+  RW_SLOT_COL_INDEX 0
+  SLOT_SUMFUNC      SLOT_SUMFUNC_LAST 0
+  SLOT_DETAILS_OPEN False
+  N_SLOT_COL_WIDTH  COLFIT_METHOD_HEAD 119
+  A_SLOT_COL_WIDTH  COLFIT_METHOD_MANUAL 100
+
+# SCT File End

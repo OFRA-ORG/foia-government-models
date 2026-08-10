@@ -1,0 +1,10335 @@
+name:Run_CBRFC_Ensemble_Fcst_RFC
+owner:eorozcowhitaker
+description:This MRM Configuration uses each of the ensemble traces from the CBRFC's inflow forecast for the basin one at a time to drive a run of the MTOM.  It then sends selected ouput to a spreadsheet for viewing and statistical analysis. - sc 12/20/11
+create_date:2026-5-13 10:29
+number_of_runs:33
+END_PACKAGE_PREAMBLE
+trace:1
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+138.78
+149.82
+143.23
+152.20
+143.23
+143.23
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+597838
+1546000
+1143000
+1143000
+1143000
+1143000
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+816.06
+488.20
+486.87
+486.87
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+260167
+815000
+619000
+619000
+619000
+619000
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+66259
+211281
+162012
+162012
+162012
+162012
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+857.59
+6386.38
+4781.90
+4781.90
+4781.90
+4781.90
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+2.0
+0.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+20.00
+10.00
+10.00
+10.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175606400
+7206710400
+7238246400
+7269782400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+138326400.61
+137894400.61
+137894400.61
+137894400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+3.00
+2.00
+2.00
+2.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:2
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+135.90
+139.67
+143.23
+152.20
+143.23
+143.23
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+196838
+819000
+1143000
+1143000
+1143000
+1143000
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+304.62
+488.20
+486.87
+486.87
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+110167
+441000
+619000
+619000
+619000
+619000
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+88173
+74356
+162012
+162012
+162012
+162012
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+641.59
+2069.18
+4781.90
+4781.90
+4781.90
+4781.90
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+10.00
+10.00
+10.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206710400
+7238246400
+7269782400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137894400.61
+137894400.61
+137894400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+2.00
+2.00
+2.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:3
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.29
+141.27
+143.23
+152.20
+143.23
+143.23
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+314838
+1143000
+1143000
+1143000
+1143000
+1143000
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+486.87
+488.20
+486.87
+486.87
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+170167
+619000
+619000
+619000
+619000
+619000
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+72821
+162012
+162012
+162012
+162012
+162012
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+727.99
+4781.90
+4781.90
+4781.90
+4781.90
+4781.90
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+10.00
+10.00
+10.00
+10.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175088000
+7206710400
+7238246400
+7269782400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137894400.61
+137894400.61
+137894400.61
+137894400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+2.00
+2.00
+2.00
+2.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:4
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.34
+138.73
+165.29
+141.63
+159.07
+162.86
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+305209
+627781
+1732814
+902312
+1960263
+1832400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+321.52
+868.12
+486.87
+865.74
+865.74
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+166211
+447859
+918411
+557029
+1294957
+865026
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+79848
+70728
+189402
+138361
+220937
+299284
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+722.29
+2173.71
+6505.30
+3837.46
+13650.14
+6443.91
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+10.0
+0.0
+15.0
+10.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+40.00
+10.00
+60.00
+40.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7208006400
+7238246400
+7271726400
+7302614400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+138758400.61
+137894400.61
+139190400.61
+138758400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+4.00
+2.00
+5.00
+4.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:5
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.34
+154.94
+141.38
+169.72
+162.85
+170.59
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+326267
+1692717
+902852
+1959554
+1832301
+2169808
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+865.74
+488.20
+865.74
+865.74
+865.74
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+217145
+883917
+557620
+1294772
+865021
+1037832
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+69514
+211010
+138492
+221067
+299284
+230275
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+795.64
+6465.63
+3846.47
+13648.16
+6443.90
+10177.37
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+10.0
+0.0
+15.0
+10.0
+10.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+40.00
+10.00
+60.00
+40.00
+40.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7176384000
+7206710400
+7240190400
+7271078400
+7302614400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+138758400.61
+137894400.61
+139190400.61
+138758400.61
+138758400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+4.00
+2.00
+5.00
+4.00
+4.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:6
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.45
+139.70
+162.36
+155.51
+170.57
+145.26
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+333041
+765497
+1930850
+1827736
+2169143
+1560264
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+372.60
+868.12
+865.74
+865.74
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+187157
+468600
+1278589
+863350
+1037670
+553472
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+69476
+73763
+225836
+299587
+230252
+112740
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+752.46
+2489.80
+13475.33
+6441.98
+10165.97
+3783.25
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+15.0
+10.0
+10.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+60.00
+40.00
+40.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7208654400
+7239542400
+7271078400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+139190400.61
+138758400.61
+138758400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+5.00
+4.00
+4.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:7
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.24
+154.50
+162.78
+174.92
+145.26
+156.44
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+263166
+1852559
+1829738
+2168551
+1560196
+1461034
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+865.74
+868.12
+865.74
+486.87
+706.47
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+153767
+1210437
+864138
+1037375
+553445
+779712
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+71831
+244374
+299569
+230277
+112738
+218746
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+704.37
+12747.47
+6442.89
+10145.20
+3782.84
+6345.80
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+15.0
+10.0
+10.0
+0.0
+2.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+60.00
+40.00
+40.00
+10.00
+20.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7177032000
+7208006400
+7239542400
+7269782400
+7301836800
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+139190400.61
+138758400.61
+138758400.61
+137894400.61
+138326400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+5.00
+4.00
+4.00
+2.00
+3.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:8
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+139.28
+158.96
+170.35
+146.37
+156.88
+145.08
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+702765
+1699736
+2162290
+1557974
+1475746
+1063835
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+644.92
+868.12
+486.87
+713.32
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+345529
+759893
+1030320
+553001
+781919
+523574
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+73648
+225385
+222919
+110689
+219197
+149157
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+980.51
+6323.01
+9648.53
+3776.08
+6348.34
+3327.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+2.0
+10.0
+0.0
+2.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+20.00
+40.00
+10.00
+20.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175606400
+7208006400
+7238246400
+7270300800
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+138326400.61
+138758400.61
+137894400.61
+138326400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+3.00
+4.00
+2.00
+3.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:9
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.12
+162.50
+149.32
+153.92
+145.07
+142.52
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+289922
+1987532
+1554073
+1473700
+1063595
+885532
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+865.74
+488.20
+708.00
+486.87
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+136085
+925844
+549141
+780207
+523390
+537977
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+73389
+244832
+110447
+218928
+149145
+120766
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+678.91
+6513.85
+3717.25
+6346.37
+3324.80
+3547.11
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+10.0
+0.0
+2.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+40.00
+10.00
+20.00
+10.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7176384000
+7206710400
+7238764800
+7269782400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+138758400.61
+137894400.61
+138326400.61
+137894400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+4.00
+2.00
+3.00
+2.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:10
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.44
+145.48
+156.36
+143.36
+142.50
+136.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+366527
+1394610
+1458313
+1060111
+884434
+458829
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+381.19
+672.39
+486.87
+486.87
+54.30
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+199979
+472089
+768149
+521367
+537752
+226112
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+74818
+63682
+217962
+149164
+120750
+71607
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+770.92
+2542.98
+6332.50
+3293.97
+3543.68
+808.55
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+2.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+20.00
+10.00
+10.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7207228800
+7238246400
+7269782400
+7300886400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+138326400.61
+137894400.61
+137894400.61
+137462400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+3.00
+2.00
+2.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:11
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.46
+146.06
+144.81
+141.58
+136.87
+145.91
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+347233
+1332308
+1049215
+880347
+458089
+1306319
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+486.87
+488.20
+486.87
+54.30
+375.56
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+136647
+691776
+518682
+536568
+226003
+469802
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+77983
+153243
+147386
+120874
+71606
+83494
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+679.72
+5891.01
+3253.05
+3525.64
+808.39
+2508.12
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+10.00
+10.00
+10.00
+0.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175088000
+7206710400
+7238246400
+7269350400
+7300886400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137894400.61
+137894400.61
+137894400.61
+137462400.61
+137462400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+2.00
+2.00
+2.00
+0.00
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:12
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.53
+143.37
+141.18
+136.83
+146.10
+142.24
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+386223
+961825
+869451
+456126
+1317907
+915547
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+332.65
+488.20
+54.30
+378.75
+449.25
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+220089
+452379
+532262
+225385
+471097
+499727
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+68617
+65272
+120205
+70961
+83723
+73208
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+799.88
+2242.60
+3460.01
+807.50
+2527.86
+2964.18
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+10.00
+0.00
+0.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206710400
+7237814400
+7269350400
+7300886400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137894400.61
+137462400.61
+137462400.61
+137462400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+2.00
+0.00
+1.00
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:13
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.32
+140.57
+137.14
+152.36
+142.23
+152.17
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+320459
+805640
+450971
+1314211
+915339
+1307035
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+444.57
+54.45
+376.84
+449.07
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+169155
+497823
+224060
+470323
+499652
+699735
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+70089
+57306
+70996
+83621
+73195
+130265
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+726.53
+2935.16
+805.60
+2516.06
+2963.04
+6012.30
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+0.00
+0.00
+0.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206278400
+7237814400
+7269350400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137462400.61
+137462400.61
+137462400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+0.00
+1.00
+1.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:14
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.34
+136.45
+145.81
+140.46
+152.17
+148.12
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+285308
+405045
+1300168
+913636
+1306810
+1376472
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+54.30
+367.88
+447.13
+486.87
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+186548
+203642
+466276
+498866
+699686
+565006
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+65551
+73694
+83320
+73119
+130257
+132591
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+751.58
+776.19
+2454.39
+2951.06
+6011.55
+3959.03
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+0.00
+0.00
+10.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206278400
+7237814400
+7269782400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137462400.61
+137462400.61
+137894400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+0.00
+1.00
+1.00
+2.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:15
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.00
+142.76
+142.22
+147.03
+148.12
+140.20
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+244095
+1278865
+914480
+1306847
+1376488
+809217
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+358.63
+455.71
+486.87
+486.87
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+128645
+462930
+501842
+700192
+565059
+525459
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+76254
+84743
+73362
+130301
+132595
+116158
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+668.20
+2403.39
+2996.41
+6019.27
+3959.84
+3356.34
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+0.00
+10.00
+10.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206278400
+7238246400
+7269782400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137462400.61
+137894400.61
+137894400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+1.00
+2.00
+2.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:16
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.48
+139.58
+152.02
+149.99
+140.28
+158.92
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+369447
+828960
+1301069
+1374124
+815991
+1627743
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+368.09
+488.20
+486.87
+486.87
+865.74
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+189284
+466769
+700165
+566302
+529810
+952932
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+74055
+65182
+128407
+131843
+116460
+232335
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+755.52
+2461.90
+6018.85
+3978.78
+3422.64
+7080.47
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+0.0
+10.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+10.00
+10.00
+10.00
+40.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206710400
+7238246400
+7269782400
+7302614400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137894400.61
+137894400.61
+137894400.61
+138758400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+2.00
+2.00
+2.00
+4.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:17
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.33
+146.82
+148.00
+141.65
+158.92
+156.71
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+284684
+1228542
+1369811
+815074
+1627578
+1676492
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+486.87
+488.20
+486.87
+865.74
+583.54
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+145082
+655626
+565216
+529319
+952851
+740128
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+73461
+129877
+131946
+116493
+232335
+171838
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+691.87
+5340.08
+3962.23
+3415.16
+7079.27
+6300.28
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+10.0
+2.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+10.00
+10.00
+10.00
+40.00
+20.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175088000
+7206710400
+7238246400
+7271078400
+7301836800
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137894400.61
+137894400.61
+137894400.61
+138758400.61
+138326400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+2.00
+2.00
+2.00
+4.00
+3.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:18
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.69
+145.53
+140.25
+161.72
+156.70
+145.48
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+407043
+1283209
+812787
+1625375
+1676016
+1304299
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+467.03
+488.20
+865.74
+583.31
+438.88
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+178179
+506944
+526126
+951209
+740054
+495515
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+73292
+79878
+117293
+232951
+171837
+88967
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+739.53
+3074.17
+3366.50
+7055.05
+6300.19
+2899.99
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+10.0
+2.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+10.00
+40.00
+20.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206710400
+7239542400
+7270300800
+7300886400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137894400.61
+138758400.61
+138326400.61
+137462400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+2.00
+4.00
+3.00
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:19
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.36
+139.89
+158.36
+157.23
+145.47
+174.77
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+290405
+730286
+1608333
+1673457
+1304131
+2835839
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+415.76
+868.12
+581.47
+438.77
+865.74
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+148896
+486126
+947190
+739462
+495468
+843695
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+73383
+51846
+233196
+171871
+88958
+274491
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+697.36
+2756.90
+6995.77
+6299.51
+2899.27
+6419.38
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+10.0
+2.0
+0.0
+10.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+40.00
+20.00
+0.00
+40.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7208006400
+7238764800
+7269350400
+7302614400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+138758400.61
+138326400.61
+137462400.61
+138758400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+4.00
+3.00
+1.00
+4.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:20
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.35
+159.14
+151.69
+149.94
+175.08
+138.48
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+288386
+1547522
+1678766
+1308461
+2846751
+565817
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+865.74
+592.17
+440.63
+865.74
+54.30
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+169038
+907683
+742387
+496227
+844946
+301349
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+68890
+247041
+170219
+86933
+274491
+51102
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+726.36
+6492.97
+6302.88
+2910.84
+6420.82
+916.89
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+10.0
+2.0
+0.0
+10.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+40.00
+20.00
+0.00
+40.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7176384000
+7207228800
+7237814400
+7271078400
+7300886400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+138758400.61
+138326400.61
+137462400.61
+138758400.61
+137462400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+4.00
+3.00
+1.00
+4.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:21
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.66
+149.11
+145.39
+181.00
+138.48
+138.92
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+367943
+1506506
+1298605
+2841415
+565646
+765412
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+486.87
+423.02
+865.74
+54.30
+54.30
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+185640
+637294
+488606
+841746
+301149
+341412
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+73801
+129389
+86223
+275211
+51099
+66343
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+750.27
+5060.70
+2794.70
+6417.14
+916.60
+974.58
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+10.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+10.00
+0.00
+40.00
+0.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175088000
+7206278400
+7239542400
+7269350400
+7300886400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137894400.61
+137462400.61
+138758400.61
+137462400.61
+137462400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+2.00
+1.00
+4.00
+0.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:22
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.34
+148.70
+174.17
+137.08
+138.92
+154.47
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+327207
+1157865
+2814246
+564472
+765125
+1494765
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+288.53
+868.12
+54.30
+54.30
+503.42
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+174159
+434465
+835295
+300415
+341321
+714331
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+71865
+75567
+276504
+51110
+66341
+222451
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+733.74
+1969.59
+6409.72
+915.55
+974.45
+6234.74
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+10.0
+0.0
+0.0
+2.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+40.00
+0.00
+0.00
+20.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7208006400
+7237814400
+7269350400
+7301836800
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+138758400.61
+137462400.61
+137462400.61
+138326400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+4.00
+0.00
+0.00
+3.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:23
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.69
+175.91
+138.47
+139.98
+154.46
+139.63
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+429632
+2688264
+564584
+764291
+1494599
+830699
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+732.44
+54.45
+54.30
+503.34
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+164006
+788077
+299772
+341014
+714305
+688172
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+77493
+219983
+51166
+66368
+222450
+171469
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+719.12
+6355.42
+914.62
+974.01
+6234.35
+5836.08
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+2.0
+0.0
+0.0
+2.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+20.00
+0.00
+0.00
+20.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175606400
+7206278400
+7237814400
+7270300800
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+138326400.61
+137462400.61
+137462400.61
+138326400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+3.00
+0.00
+0.00
+3.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:24
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.46
+137.03
+138.60
+150.28
+139.64
+148.03
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+370259
+435029
+728743
+1480670
+831252
+1446824
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+54.30
+54.45
+500.12
+486.87
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+185272
+240794
+332464
+713267
+687235
+588504
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+71029
+53915
+66615
+216899
+171369
+154616
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+749.74
+829.69
+961.70
+6218.53
+5821.80
+4317.14
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+2.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+0.00
+20.00
+10.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206278400
+7238764800
+7269782400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137462400.61
+138326400.61
+137894400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+0.00
+0.00
+3.00
+2.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:25
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.21
+138.53
+157.21
+139.36
+148.04
+147.52
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+257382
+719670
+1486934
+831533
+1446975
+1120384
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+54.30
+511.83
+486.87
+486.87
+865.74
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+138965
+327646
+716589
+687712
+588557
+856662
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+73001
+69244
+217406
+171432
+154620
+324787
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+683.06
+954.76
+6273.21
+5829.07
+4317.95
+6434.29
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+2.0
+0.0
+0.0
+10.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+20.00
+10.00
+10.00
+40.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7207228800
+7238246400
+7269782400
+7302614400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+138326400.61
+137894400.61
+137894400.61
+138758400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+0.00
+3.00
+2.00
+2.00
+4.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:26
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.31
+150.33
+139.62
+144.82
+147.52
+139.88
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+279260
+1401361
+829246
+1444746
+1120194
+690142
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+486.87
+488.20
+486.87
+865.74
+54.30
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+174139
+687616
+688501
+588399
+856640
+312250
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+75322
+160966
+171631
+154640
+324787
+55250
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+733.71
+5827.61
+5841.10
+4315.54
+6434.27
+932.59
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+10.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+10.00
+10.00
+10.00
+40.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175088000
+7206710400
+7238246400
+7271078400
+7300886400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137894400.61
+137894400.61
+137894400.61
+138758400.61
+137462400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+2.00
+2.00
+2.00
+4.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:27
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.31
+139.71
+147.62
+141.02
+139.88
+146.41
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+318208
+733003
+1423470
+1117980
+689962
+1516191
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+486.87
+488.20
+865.74
+54.30
+865.74
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+190438
+621631
+583514
+855137
+312160
+893159
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+72569
+170698
+154975
+325018
+55249
+252573
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+757.18
+4822.00
+4241.09
+6432.54
+932.46
+6476.26
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+10.0
+0.0
+10.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+10.00
+10.00
+40.00
+0.00
+40.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175088000
+7206710400
+7239542400
+7269350400
+7302614400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137894400.61
+137894400.61
+138758400.61
+137462400.61
+138758400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+2.00
+2.00
+4.00
+0.00
+4.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:28
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+137.08
+144.30
+145.48
+138.91
+146.55
+143.84
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+418726
+1405356
+1119746
+690284
+1525179
+1172234
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+486.87
+868.12
+54.30
+865.74
+385.88
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+292679
+555323
+856458
+312701
+898395
+473994
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+72525
+153965
+320179
+55020
+252573
+77351
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+904.41
+3811.46
+6434.06
+933.24
+6482.28
+2572.01
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+10.0
+0.0
+10.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+10.00
+40.00
+0.00
+40.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175088000
+7208006400
+7237814400
+7271078400
+7300886400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137894400.61
+138758400.61
+137462400.61
+138758400.61
+137462400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+2.00
+4.00
+0.00
+4.00
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:29
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.94
+143.96
+139.77
+148.20
+143.82
+145.51
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+392381
+1032579
+681216
+1516977
+1170856
+1021695
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+752.75
+54.45
+865.74
+385.70
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+185750
+794616
+310781
+897055
+473919
+557017
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+75443
+251408
+55089
+253167
+77338
+177023
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+750.43
+6362.94
+930.47
+6480.74
+2570.87
+3837.28
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+2.0
+0.0
+10.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+20.00
+0.00
+40.00
+0.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7175606400
+7206278400
+7239542400
+7269350400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+138326400.61
+137462400.61
+138758400.61
+137462400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+3.00
+0.00
+4.00
+1.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:30
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.32
+138.44
+146.18
+145.70
+145.50
+139.05
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+300761
+614837
+1500121
+1167592
+1021311
+703780
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+54.30
+868.12
+381.77
+486.87
+443.42
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+178588
+258692
+882343
+472325
+556857
+497358
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+73437
+58921
+256673
+77108
+177011
+79520
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+740.12
+855.47
+6463.82
+2546.57
+3834.84
+2928.08
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+10.0
+0.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+40.00
+0.00
+10.00
+0.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7208006400
+7237814400
+7269782400
+7300886400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+138758400.61
+137462400.61
+137894400.61
+137462400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+0.00
+4.00
+1.00
+2.00
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:31
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.28
+148.92
+147.22
+143.59
+139.05
+165.74
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+272764
+1453027
+1167890
+1020999
+703734
+1745685
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+865.74
+386.24
+486.87
+443.50
+865.74
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+144928
+867286
+473711
+557119
+497390
+922366
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+72071
+254991
+77238
+176999
+79526
+187907
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+691.65
+6446.51
+2567.70
+3838.83
+2928.56
+6509.85
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+10.0
+0.0
+0.0
+0.0
+10.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+40.00
+0.00
+10.00
+0.00
+40.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7176384000
+7206278400
+7238246400
+7269350400
+7302614400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+138758400.61
+137462400.61
+137894400.61
+137462400.61
+138758400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+4.00
+1.00
+2.00
+1.00
+4.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:32
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.19
+146.23
+142.35
+138.71
+154.06
+141.39
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+407245
+1059791
+1013361
+703205
+1754407
+903663
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+222.06
+488.20
+444.89
+865.74
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+205661
+407473
+551175
+497956
+924541
+557613
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+77212
+65929
+175697
+78710
+187907
+138239
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+779.10
+1558.23
+3748.25
+2937.19
+6512.35
+3846.36
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+0.0
+10.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+10.00
+0.00
+40.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206710400
+7237814400
+7271078400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137894400.61
+137462400.61
+138758400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+2.00
+1.00
+4.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
+trace:33
+start:2026-12-31 24:00
+end:2031-12-31 24:00
+time_step_unit:year
+unit_quantity:1
+time_steps:6
+consecutive:0
+slot_set:Excel_Direct_InputEnsemble
+rule_set:(CRMMS Ruleset v4.17)
+idx_sequential:0
+END_RUN_PREAMBLE
+2026-12-31 24:00
+2027-12-31 24:00
+2028-12-31 24:00
+2029-12-31 24:00
+2030-12-31 24:00
+2031-12-31 24:00
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: LTSPTriggerDate
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+136.35
+142.52
+138.95
+165.92
+141.39
+141.24
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: FlamingGorgeData
+slot_type: SeriesSlot
+slot_name: YampaAprJulVolAnnual
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+287946
+920071
+694436
+1748019
+903371
+788374
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterPeakFlowTarget
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+54.30
+486.69
+441.00
+865.74
+486.87
+486.87
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: WhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: acre-ft/month
+scale: 1000
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: BlueMesaAprilThroughJulyVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+156099
+514927
+495884
+923741
+557577
+543844
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MayReleaseVolume
+END_SLOT_PREAMBLE
+units: acre-ft
+scale: 1
+74293
+96653
+78400
+187945
+138236
+137250
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonPeakFlowTarget
+END_SLOT_PREAMBLE
+units: cfs
+scale: 1
+707.73
+3195.83
+2905.61
+6511.43
+3845.81
+3636.52
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.0
+0.0
+0.0
+10.0
+0.0
+0.0
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: ShoulderFlowDuration
+END_SLOT_PREAMBLE
+units: day
+scale: 1
+0.00
+0.00
+0.00
+40.00
+10.00
+10.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowCenterDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+7143120000
+7174656000
+7206278400
+7239542400
+7269782400
+7301318400
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: PeakFlowStartDate
+END_SLOT_PREAMBLE
+units: MonthAndDay
+scale: 1
+137462400.61
+137462400.61
+137462400.61
+138758400.61
+137894400.61
+137894400.61
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: CanyonAbove300
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: GunnisonHClass
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+0.00
+1.00
+1.00
+4.00
+2.00
+2.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: ScalarSlot
+slot_name: MeetCanyonDecreeFlows
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+1.00
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetCanyonFlowTarget
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByDec
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetStorageTargetByJuly
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWhitewaterVolumeGoal
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: MeetWWBaseFlow
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+object_type: DataObj
+object_name: BlueMesaData
+slot_type: SeriesSlot
+slot_name: TunnelDivCheck
+END_SLOT_PREAMBLE
+units: NONE
+scale: 1
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+END_COLUMN
+END_SLOT
+END_RUN
