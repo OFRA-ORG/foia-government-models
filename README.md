@@ -14,6 +14,9 @@ This repository contains source code and artifacts from U.S. federal government 
 | [`fns-snap-quality-control`](fns-snap-quality-control/) | USDA Food and Nutrition Service | SNAP Quality Control Minimodels |
 | [`noaa-om4`](noaa-om4/) | NOAA Geophysical Fluid Dynamics Laboratory | OM4 Ocean Model Configuration |
 | [`boem-scram`](boem-scram/) | Bureau of Ocean Energy Management | Stochastic Collision Risk Assessment for Movement (SCRAM) |
+| [`doi-24-month-study`](doi-24-month-study/) | Bureau of Reclamation (DOI) | CRMMS 24-Month Study Model |
+| [`doj-ojp-mmdit`](doj-ojp-mmdit/) | DOJ Office of Justice Programs / NIJ | Mitochondrial Mixture Database & Interpretation Tool (MMDIT) |
+| [`noaa-eagle`](noaa-eagle/) | NOAA (EPIC) | Project EAGLE — Experimental AI Global and Limited-area Ensemble forecast system |
 
 ## About
 
