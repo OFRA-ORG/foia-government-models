@@ -17,6 +17,7 @@ This repository contains source code and artifacts from U.S. federal government 
 | [`doi-24-month-study`](doi-24-month-study/) | Bureau of Reclamation (DOI) | CRMMS 24-Month Study Model |
 | [`doj-ojp-mmdit`](doj-ojp-mmdit/) | DOJ Office of Justice Programs / NIJ | Mitochondrial Mixture Database & Interpretation Tool (MMDIT) |
 | [`noaa-eagle`](noaa-eagle/) | NOAA (EPIC) | Project EAGLE — Experimental AI Global and Limited-area Ensemble forecast system |
+| [`boem-marketsim`](boem-marketsim/) | Bureau of Ocean Energy Management | Market Simulation Model (MarketSim) |
 
 ## About
 
