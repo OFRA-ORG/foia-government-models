@@ -18,6 +18,9 @@ This repository contains source code and artifacts from U.S. federal government 
 | [`doj-ojp-mmdit`](doj-ojp-mmdit/) | DOJ Office of Justice Programs / NIJ | Mitochondrial Mixture Database & Interpretation Tool (MMDIT) |
 | [`noaa-eagle`](noaa-eagle/) | NOAA (EPIC) | Project EAGLE — Experimental AI Global and Limited-area Ensemble forecast system |
 | [`boem-marketsim`](boem-marketsim/) | Bureau of Ocean Energy Management | Market Simulation Model (MarketSim) |
+| [`noaa-pile-driving`](noaa-pile-driving/) | NOAA Fisheries (NMFS) | Multi-Species Pile Driving Calculator |
+| [`frb-us`](frb-us/) | Board of Governors of the Federal Reserve System | FRB/US Model |
+| [`prc-workshare`](prc-workshare/) | Postal Regulatory Commission | Workshare Cost Avoidance Models |
 
 ## About
 
