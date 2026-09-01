@@ -21,6 +21,7 @@ This repository contains source code and artifacts from U.S. federal government 
 | [`noaa-pile-driving`](noaa-pile-driving/) | NOAA Fisheries (NMFS) | Multi-Species Pile Driving Calculator |
 | [`frb-us`](frb-us/) | Board of Governors of the Federal Reserve System | FRB/US Model |
 | [`prc-workshare`](prc-workshare/) | Postal Regulatory Commission | Workshare Cost Avoidance Models |
+| [`noaa-gfs-v16`](noaa-gfs-v16/) | NOAA NCEP Environmental Modeling Center | Global Forecast System (GFS) v16 |
 
 ## About
 
