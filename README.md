@@ -23,6 +23,7 @@ This repository contains source code and artifacts from U.S. federal government 
 | [`frb-us`](frb-us/) | Board of Governors of the Federal Reserve System | FRB/US Model |
 | [`prc-workshare`](prc-workshare/) | Postal Regulatory Commission | Workshare Cost Avoidance Models |
 | [`noaa-gfs-v16`](noaa-gfs-v16/) | NOAA NCEP Environmental Modeling Center | Global Forecast System (GFS) v16 |
+| [`noaa-flood-inundation`](noaa-flood-inundation/) | NOAA Office of Water Prediction | Flood Inundation Mapping (HAND / ras2fim / ripple1d) |
 
 ## About
 
