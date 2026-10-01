@@ -18,6 +18,7 @@ This repository contains source code and artifacts from U.S. federal government 
 | [`doi-24-month-study`](doi-24-month-study/) | Bureau of Reclamation (DOI) | CRMMS 24-Month Study Model |
 | [`doj-ojp-mmdit`](doj-ojp-mmdit/) | DOJ Office of Justice Programs / NIJ | Mitochondrial Mixture Database & Interpretation Tool (MMDIT) |
 | [`noaa-eagle`](noaa-eagle/) | NOAA (EPIC) | Project EAGLE — Experimental AI Global and Limited-area Ensemble forecast system |
+| [`noaa-commercial-data`](noaa-commercial-data/) | NOAA NESDIS (STAR / EMC) | Commercial Data Program processing tools (MIRS + CRTM) |
 | [`boem-marketsim`](boem-marketsim/) | Bureau of Ocean Energy Management | Market Simulation Model (MarketSim) |
 | [`noaa-pile-driving`](noaa-pile-driving/) | NOAA Fisheries (NMFS) | Multi-Species Pile Driving Calculator |
 | [`frb-us`](frb-us/) | Board of Governors of the Federal Reserve System | FRB/US Model |
